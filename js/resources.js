@@ -4,11 +4,11 @@ game.resources = [
 	 * @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
-	 { name: "water_edge_tiles", type: "image", src: "/data/img/water_edge_tiles.png" },
-	 { name: "mainPlayer", type: "image", src: "/data/img/mainPlayer.png" },
-	 { name: "metatiles32x32", type: "image", src: "/data/img/metatiles32x32.png" },
-	
-	/* Atlases 
+	 { name: "grass_terrain", type: "image", src: "/data/img/grass_terrain.png" },
+	 { name: "boy_tiles", type: "image", src: "/data/img/boy_tiles.png" },
+	 { name: "collision_tiles", type: "image", src: "/data/img/collision_tiles.png" },
+
+	/* Atlases
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
 	 */
@@ -18,7 +18,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
-	 { name: "area501", type: "tmx", src: "/data/map/area501.tmx" },
+	 { name: "area501", type: "json", src: "/data/map/area501.json" },
 
 	/* Background music. 
 	 * @example
