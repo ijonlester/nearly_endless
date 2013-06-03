@@ -57,27 +57,11 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"\/data\/img\/grass_terrain.png",
+         "image":"..\/img\/grass_terrain.png",
          "imageheight":96,
          "imagewidth":192,
          "margin":0,
          "name":"grass_terrain",
-         "properties":
-            {
-
-            },
-         "spacing":0,
-         "tileheight":32,
-         "tilewidth":32,
-         "transparentcolor":"#dddddd"
-        }, 
-        {
-         "firstgid":19,
-         "image":"\/data\/img\/collision_tiles.png",
-         "imageheight":96,
-         "imagewidth":192,
-         "margin":0,
-         "name":"collision_tiles",
          "properties":
             {
 

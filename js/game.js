@@ -8,11 +8,11 @@ var game = {
 		me.sys.gravity = 0;
 		
         // Initialize the video.
-        if (!me.video.init("screen", 320, 320, true, 'auto')) {
+        if (!me.video.init("screen", 640, 480, true, 1, true)) {
             alert("Your browser does not support HTML5 canvas.");
             return;
         }
-		
+
 		// add "#debug" to the URL to enable the debug Panel
 		if (document.location.hash === "#debug") {
 			window.onReady(function () {
@@ -40,9 +40,10 @@ var game = {
     "loaded" : function () {
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
-     
+
 	   // add our player entity in the entity pool
 	   me.entityPool.add("mainPlayer", game.PlayerEntity);
+       me.entityPool.add("treeEntity", game.treeEntity);
 				 
 	   // enable the keyboard
 	   me.input.bindKey(me.input.KEY.A,	"left");

@@ -7,6 +7,7 @@ game.resources = [
 	 { name: "grass_terrain", type: "image", src: "/data/img/grass_terrain.png" },
 	 { name: "boy_tiles", type: "image", src: "/data/img/boy_tiles.png" },
 	 { name: "collision_tiles", type: "image", src: "/data/img/collision_tiles.png" },
+	 { name: "tree_tiles", type: "image", src: "/data/img/tree_tiles.png" },
 
 	/* Atlases
 	 * @example
@@ -18,7 +19,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
-	 { name: "area501", type: "json", src: "/data/map/area501.json" },
+	 { name: "area502", type: "tmx", src: "/data/map/area502.json" },
 
 	/* Background music. 
 	 * @example
