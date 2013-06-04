@@ -54,6 +54,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		
         // check & update player movement
         this.updateMovement();
+	this.collide();
 
         // update animation if necessary
         if (this.vel.x!=0 || this.vel.y!=0) {
@@ -76,14 +77,14 @@ game.treeEntity = me.ObjectEntity.extend({
         settings.image = "tree_tiles";
         settings.spritewidth = 32;
         settings.spriteheight = 48;
-        settings.collidable = true;
-        this.collideType("solid");
+	this.parent(x, y, settings);
 
-        // call the parent constructor
-        this.parent(x, y, settings);
+	this.renderable.addAnimation("static", [0]);
+	this.renderable.setCurrentAnimation("static");
     },
 
     onCollision: function(res, obj) {
-        console.log("collide");
+    	obj.pos.x -= res.x;
+	obj.pos.y -= res.y;
     }
 });
